@@ -97,7 +97,7 @@ def load_yahoo_quote(ticker, begindate, enddate, info='quote'):
     param = dict()
     param['period1'] = int(tb)
     param['period2'] = int(te)
-    param['interval'] = '1d'
+    param['interval'] = '1h'
     if info == 'quote':
         param['events'] = 'history'
     elif info == 'dividend':
